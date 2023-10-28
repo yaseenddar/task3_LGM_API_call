@@ -1,0 +1,25 @@
+@keyframes borderAnimation {
+    0% {
+      border-color: #3498db; /* Initial border color */
+    }
+    50% {
+      border-color: #ff5733; /* Midway border color */
+    }
+    100% {
+      border-color: #3498db; /* Final border color, same as initial */
+    }
+  }
+  
+  .card {
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    animation: borderAnimation 3s linear infinite; /* Adjust duration as needed */
+  }
+  
+  .card:hover {
+    animation: none; /* Disable hover animation */
+    border-color: #ff5733; /* Set a different color on hover */
+  }
+  
